@@ -24,6 +24,44 @@ body {
   height: auto;
   width: 100%;
 }
+/* === Blue header only for ABOUT page === */
+.about-page .header {
+  background-color: #007bff; /* blue background */
+}
+
+.about-page .header a,
+.about-page .header i {
+  color: rgb(0, 4, 235); /* make text/icons visible */
+}
+/* === Contact page header === */
+.contact-page .header {
+  background-color: #1d3fae; /* example: green */
+}
+/* === Doctors page header === */
+.doctors-page .header {
+  background-color: #4108dd; /* example: purple */
+}
+/* === Services page header === */
+.services-page .header {
+  background-color: #0c08d6; /* example: orange */
+}
+
+.services-page .header a,
+.services-page .header i {
+  color: rgb(41, 10, 217); /* make text & icons visible */
+}
+
+
+.doctors-page .header a,
+.doctors-page .header i {
+  color: rgb(59, 29, 179); /* make text & icons visible */
+}
+
+.contact-page .header a,
+.contact-page .header i {
+  color: white; /* text & icons white */
+}
+
 .hero {
   position: relative;
   overflow: hidden;
