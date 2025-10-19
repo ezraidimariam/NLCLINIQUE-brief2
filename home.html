@@ -1,135 +1,786 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NLClinique</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Header</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body> 
-  <div class="header-content">
-  <header>
-    
-    <div class="logo-container">
-      <a href="index.html">
-        <img src="images/Nllogo.png" alt="NLClinique Logo">
-      </a>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="doctors.html">Doctors</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<body>
+    <section class="hero">
+        <img src="images/BackGround.png" alt="background" class="hero-bg" />
 
-  <main class="about-page">
-    <section class="about-intro">
-      <div class="text-box">
-        <h1>YOUR HEALTH IS OUR PRIORITY</h1>
-      </div>
+        <header class="header">
+            <div class="logo">
+                <img src="images/logo1.jpg" alt="Logo" />
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Doctors</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </nav>
+
+            <div class="search-nav">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search" />
+            </div>
+        </header>
+
+        <div class="hero-content">
+            <div class="text-block">
+                <span class="small-text">YOUR HEALTH IS OUR PRIORITY</span>
+                <h1>
+                    More Than Medicine <br />
+                    It’s Personal
+                </h1>
+                <p>
+                    Wellness Hospital will always serve you<br />
+                    wholeheartedly.Health is a priority.
+                </p>
+
+                <div class="buttons">
+                    <a href="#" class="btn">Book Appointment <i class="fa fa-arrow-right"></i></a>
+                    <span>or</span>
+                    <a href="#" class="btn-outline">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/hero-asset.png" alt="Doctor" />
+            </div>
+        </div>
+        <div class="hours">
+            <div class="clock-icon">
+                <i class="far fa-clock"></i>
+            </div>
+            <div class="hours-text">
+                <span>Open Hours</span>
+                <p>
+                    Mon - Fri | 08:00 AM to 05:00 PM <br />
+                    Sat - Sun | 09:00 AM to 03:00 PM
+                </p>
+            </div>
+        </div>
+        <div class="availability">
+            <form>
+                <div class="rows">
+                    <div class="groups">
+                        <label for="doctor-type"></label>
+                        <select id="doctor-type" name="doctor-type">
+                            <option value="">doctor Type</option>
+                        </select>
+                    </div>
+
+                    <div class="groups">
+                        <label for="doctor-name"></label>
+                        <select id="doctor-name" name="doctor-name">
+                            <option value="">Select Doctor</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="rows">
+                    <div class="groups">
+                        <label for="date"></label>
+                        <select id="date" name="date">
+                            <option value="">date</option>
+                        </select>
+                    </div>
+
+                    <div class="groups">
+                        <label for="time"></label>
+                        <select id="time" name="time">
+                            <option value="">time</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="check-availability">
+                    <div class="availability-line1">
+                        <img src="images/Line.png" alt="Line" />
+                    </div>
+                    <button class="btn">Check Availability</button>
+                    <div class="availability-line2">
+                        <img src="images/Line.png" alt="Line" />
+                    </div>
+                </div>
+            </form>
+        </div>
     </section>
-    <section class="about-more">
-      <p>
-        More Than Medicine
-        <br>
-        it's personal
-      </p>
+    <section>
+        <div class="tools">
+            <div class="tool-content">
+                <img src="images/Logomark.png" alt="" />
+                <div class="tool-text">
+                    <h4>Layers</h4>
+                </div>
+            </div>
+            <div class="tool-content">
+                <img src="images/Logomark-1.png" alt="" />
+                <div class="tool-text">
+                    <h4>Sisyphus</h4>
+                </div>
+            </div>
+            <div class="tool-content">
+                <img src="images/Logomark-2.png" alt="" />
+                <div class="tool-text">
+                    <h4>Hourglass</h4>
+                </div>
+            </div>
+            <div class="tool-content">
+                <img src="images/Logomark-3.png" alt="" />
+                <div class="tool-text">
+                    <h4>Command+R</h4>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="about-more2">
-      <p>
-        Wellness Hospital will always serve you
-        <br>
-        wholeheartedly. Health is a priority.
-      </p>
 
-      <section class="hero">
-        <div class="home-image">
-          <img src="images/hero asset 1 (1).png" alt="NLClinique" />
+    <section>
+        <div class="hero2">
+            <!--about us section-->
+            <div class="aboutus-content">
+                <div class="cercle-bg"></div>
+                <div class="right-content">
+                    <!--image section-->
+                    <div>
+                        <img src="images/Mask-group-3.png" alt="" />
+                    </div>
+                    <div>
+                        <div class="right-content-doctor">
+                            <img src="images/Mask-group.png" alt="" />
+                        </div>
+                        <div class="right-content-doctor-txt">
+                            <span>20</span>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="left-content">
+                    <!--text-->
+                    <div class="left-content-aboutus">
+                        <span> ABOUT US </span>
+                    </div>
+                    <div class="left-content-text">
+                        <h3>
+                            We Are Always Ensure <br />
+                            Best Medical Treatment
+                        </h3>
 
+                        <span class="left-content-span">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+                            Proin pellentesque eget arcu sit amet tempus.<br />
+                            Proin porttitor porttitor viverra. Duis mattis <br />
+                            turpis at ultricies efficitur.
+                        </span>
+                    </div>
+                    <div>
+                        <div class="aboutus-images">
+                            <div>
+                                <img src="images/person-2.png" alt="person" />
+                            </div>
+                            <div class="aboutus-image2">
+                                <img src="images/person-1.png" alt="person" />
+                            </div>
+                        </div>
+                        <div class="left-content-hospital">
+                            <div>
+                                <span>
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nunc accumsan varius vulputate. <br />
+                                    Nullam feugiat placerat elit, vel porta felis imperdiet
+                                    nec.Curabitur vitae vehicula
+                                    <br />
+                                    est, id vehicula neque. Suspendisse suscipit at ligula id
+                                    euismod.In euismod <br />
+                                    tortor et libero feugiat, vel accumsan egestas."
+                                </span>
+                            </div>
+                            <div class="left-content-hospital-bottom">
+                                <div>
+                                    <img src="images/Frame-137.png" alt="logo" />
+                                </div>
+                                <div class="left-content-hospital-bottom-px">
+                                    <span>Vice Director of Wellness Hospital</span>
+                                    <img src="images/Line.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aboutus-arrow">
+                        <a href="#" class="btn-aboutus">More About Us<i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section class="about-intro2">
-<div class="book-btn">
-  <h1>Book Appointment</h1>
-  <span class="material-icons">arrow_forward</span>
-</div>
-
-<div class="contact-btn">
-  <h1>Contact Us</h1>
-  <span class="material-icons">arrow_forward</span>
-</div>
-      </section>
-
-      <section class="bottom-image">
-        <img src="images/iiiimage33.png" alt="Clinique Image">
-      </section>
-      <section class="about-more3">
-        <p>
-          Open Hours
-          <br>
-          Mon - Fri | 08:00 AM to 05:00 PM
-          <br>
-          Sat - sun | 09:00 AM to 03:00 PM
-        </p>
-
-
-        <div class="table">
-
-          <div class="bloc">
-            <div class="bloc1">
-              <img src="images/doctors-bag.png" alt="">
-              <select id="doctorType" name="doctorType">
-
-                <option>Doctor Type</option>
-                <option>......</option>
-                <option>......</option>
-              </select>
+    <section>
+        <div class="infos">
+            <div class="infos-content">
+                <h3>500k+</h3>
+                <span>Recovered Patients</span>
             </div>
-            <div class="bloc1">
-              <img src="images/straitjacket.png" alt="">
-
-              <select id="doctor" name="doctor">
-                <option value="0">Doctor Name</option>
-                <option>Dr : zakariae</option>
-                <option>Dr : ayoub</option>
-                <option>Dr : mouhamed</option>
-              </select>
+            <div class="infos-content">
+                <h3>90+</h3>
+                <span>Expert Doctors</span>
             </div>
-          </div>
-          <div class="bloc">
-            <div class="bloc1">
-              <td><img src="images/calendar.png" alt=""><input type="date" placeholder="Date "></td>
-
+            <div class="infos-content">
+                <h3>95%</h3>
+                <span>Satisfaction Rate</span>
             </div>
-            <div class="bloc1">
-              <td><img src="images/straitjacket.png" alt=""><input type="time" placeholder="Time ">
-              </td>
+            <div class="infos-content">
+                <h3>100+</h3>
+                <span>Awards</span>
             </div>
-          </div>
-
-
-          <div class="btn">
-            <button>Check Doctor Availability</button>
-          </div>
-
-
         </div>
-</div>
-        <section>
-        <div class="pg-img">
-                  <div>
-          <img src="images/Frame 311 (3).png" alt="Clinique Image">
+    </section>
+
+    <section>
+        <div class="ourservice-content">
+            <div class="bg-service">
+                <div>
+                    <div class="service-content-txt">
+                        <div class="left-content-aboutus"><span>OUR SERVICES</span></div>
+                        <!--our serice text-->
+                        <div class="txt-content">
+                            <h3>Experienced in Multiple <br />Medical Specialities</h3>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                <br />
+                                Etiam hendrerit metus ex, id ullamcorper massa accumsan <br />
+                                volutpat. </span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="Experience-raw">
+                            <div class="for-padding">
+                                <div class="raw-content">
+                                    <div class="img-txt-content">
+                                        <img src="images/Frame-332-2.png" alt="Dentiste" />
+                                        <span>01</span>
+                                    </div>
+                                    <div class="txt-content-bottom">
+                                        <h4>Dental Care</h4>
+                                        <span>Lorem ipsum dolor sit amet, brconsectetur adipiscing
+                                            elit. Sed <br />
+                                            dignissim lorem quis consequat.</span>
+                                    </div>
+                                    <div class="button-more">
+                                        <span>Explore More &#8599;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="for-padding">
+                                <div class="raw-content">
+                                    <div class="img-txt-content">
+                                        <img src="images/Frame-332-1.png" alt="bones" />
+                                        <span>02</span>
+                                    </div>
+                                    <div class="txt-content-bottom">
+                                        <h4>Orthopedics</h4>
+                                        <span>Lorem ipsum dolor sit amet,consectetur adipiscing elit.
+                                            Sed <br />
+                                            dignissim lorem quis consequat.</span>
+                                    </div>
+                                    <div class="button-more">
+                                        <span>Explore More &#8599;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="for-padding">
+                                <div class="raw-content">
+                                    <div class="img-txt-content">
+                                        <img src="images/Frame-332.png" alt="bones" />
+                                        <span>03</span>
+                                    </div>
+                                    <div class="txt-content-bottom">
+                                        <h4>Heart Care</h4>
+                                        <span>Lorem ipsum dolor sit amet,consectetur adipiscing elit.
+                                            Sed <br />
+                                            dignissim lorem quis consequat.</span>
+                                    </div>
+                                    <div class="button-more">
+                                        <span>Explore More &#8599;</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Experience-raw">
+                            <div class="for-padding">
+                                <div class="raw-content">
+                                    <div class="img-txt-content">
+                                        <img src="images/Vector.png" alt="pathology" />
+                                        <span>04</span>
+                                    </div>
+                                    <div class="txt-content-bottom">
+                                        <h4>Pathology</h4>
+                                        <span>Lorem ipsum dolor sit amet,consectetur adipiscing elit.
+                                            Sed <br />
+                                            dignissim lorem quis consequat..</span>
+                                    </div>
+                                    <div class="button-more">
+                                        <span>Explore More &#8599;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="for-padding">
+                                <div class="raw-content">
+                                    <div class="img-txt-content">
+                                        <img src="images/eye.png" alt="eye" />
+                                        <span>05</span>
+                                    </div>
+                                    <div class="txt-content-bottom">
+                                        <h4>Eye Care</h4>
+                                        <span>Lorem ipsum dolor sit amet,consectetur adipiscing elit.
+                                            Sed <br />
+                                            dignissim lorem quis consequat.</span>
+                                    </div>
+                                    <div class="button-more">
+                                        <span>Explore More &#8599;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="for-padding">
+                                <div class="raw-content">
+                                    <div class="img-txt-content">
+                                        <img src="images/Frame-332-3.png" alt="bones" />
+                                        <span>06</span>
+                                    </div>
+                                    <div class="txt-content-bottom">
+                                        <h4>Internal Disease</h4>
+                                        <span>Lorem ipsum dolor sit amet,consectetur adipiscing elit.
+                                            Sed <br />
+                                            dignissim lorem quis consequat.</span>
+                                    </div>
+                                    <div class="button-more">
+                                        <span>Explore More &#8599;</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-services">
+                        <a href="#" class="btn">See More Services<i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div></section>
+    </section>
+
+    <section>
+        <div>
+            <div class="doctor-bar">
+                <span class="Doctor-content-top">Our Doctors</span>
+                <h4>
+                    Meet Our Expert <br />
+                    Doctor
+                </h4>
+            </div>
+            <div class="Doctor-section">
+                <div class="Doctor-content">
+                    <div class="for-padding">
+                        <div class="Experience-raw-doctor">
+                            <div class="for-padding-doctor">
+                                <div class="raw-content-doctor">
+                                    <img src="images/Doctor-1.png" alt="" width="250" />
+                                    <h4>Micol Efigenia</h4>
+                                    <h5>Cardiologist</h5>
+                                    <span>Cardiologist with 8 years experience.<br />
+                                        Has been certified as the best heart doctor.</span>
+                                </div>
+                            </div>
+                            <div class="for-padding-doctor">
+                                <div class="raw-content-doctor">
+                                    <img src="images/Doctor-2.png" alt="" width="250" />
+                                    <h4>Irma Winnifred</h4>
+                                    <h5>Dentist</h5>
+                                    <span>Cardiologist with 8 years experience.<br />
+                                        Has been certified as the best heart doctor.</span>
+                                </div>
+                            </div>
+                            <div class="for-padding-doctor">
+                                <div class="raw-content-doctor">
+                                    <img src="images/Doctor-3.png" alt="" width="200" />
+                                    <h4>Mnason Prabhakar</h4>
+                                    <h5>Phatologist</h5>
+                                    <span>Cardiologist with 8 years experience.<br />
+                                        Has been certified as the best heart doctor.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="for-padding">
+                        <div class="Experience-raw-doctor">
+                            <div class="for-padding-doctor">
+                                <div class="raw-content-doctor">
+                                    <img src="images/Doctor-4.png" alt="" width="250" />
+                                    <h4>Lage Rodrigo</h4>
+                                    <h5>Orthopedics</h5>
+                                    <span>Cardiologist with 8 years experience.<br />
+                                        Has been certified as the best heart doctor.</span>
+                                </div>
+                            </div>
+                            <div class="for-padding-doctor">
+                                <div class="raw-content-doctor">
+                                    <img src="images/Doctor-5.png" alt="" width="250" />
+                                    <h4>Giusi Marjut</h4>
+                                    <h5>Surgeon</h5>
+                                    <span>Cardiologist with 8 years experience.<br />
+                                        Has been certified as the best heart doctor.</span>
+                                </div>
+                            </div>
+                            <div class="for-padding-doctor">
+                                <div class="raw-content-doctor">
+                                    <img src="images/Doctor-6.png" alt="" width="250" />
+                                    <h4>Freyr Johano</h4>
+                                    <h5>Internist</h5>
+                                    <span>Cardiologist with 8 years experience.<br />
+                                        Has been certified as the best heart doctor.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-doctor">
+                <a href="#" class="btn">See More Doctors<i class="fa fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="Appointment-all">
+            <div class="Appointment-content">
+                <div class="position-txt">
+                    <img src="images/BackGround.png" alt="" width="1000" height="500" />
+                    <div class="Appointment-txt">
+                        <h4>
+                            Want to Immediately <br />
+                            See Our Trusted Doctor?
+                        </h4>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                            <br />hendrerit metus ex, id ullamcorper massa accumsan
+                            volutpat. <br />Etiam viverra pharetra dui, nec aliquet nisi
+                            consequat sit amet. </span>
+
+                        <div>
+                            <a href="#" class="Appointment-btn">Book Appointment Now!<i
+                                    class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctor-appointment">
+                    <img src="images/Mask-group-1.png" alt="" width="500" height="500" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="price-txt-fix">
+            <div class="left-content-aboutus"><span>PRICING</span></div>
+            <!--our serice text-->
+            <div class="txt-content">
+                <h3>Pick a Plan for <br />Hospitalization Cost</h3>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                    Etiam hendrerit metus ex, id ullamcorper massa accumsan <br />
+                    volutpat. </span>
+            </div>
+        </div>
+        <div class="content-padding">
+            <div class="Content-pricing">
+                <div class="for-padding">
+                    <div class="pricing-form">
+                        <div class="Content-pricing-txt">
+                            <h4>Join Room</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet,<br />
+                                consectetur adipiscing elit. Etiam <br />
+                                hendrerit metus ex, id ullamcorper <br />
+                                massa accumsan volutpat.
+                            </p>
+                        </div>
+
+                        <div class="price">
+                            <div class="price-fix">
+                                <h4>$19.3</h4>
+                                <p>/ Person</p>
+                            </div>
+                            <img src="images/Line.png" alt="" />
+                            <span><br />Featurs</span>
+                        </div>
+                        <div>
+                            <div class="stats-price">
+                                <img src="images/checkmark-circle.png" alt="" />
+                                <p>Bedside Cabinet</p>
+                            </div>
+                            <div class="stats-price">
+                                <img src="images/checkmark-circle.png" alt="" />
+                                <p>Waiting Chair</p>
+                            </div>
+                            <div class="stats-price">
+                                <img src="images/checkmark-circle.png" alt="" height="0" />
+                                <p>
+                                    Bathroom (Hot & Cold <br />
+                                    Water)
+                                </p>
+                            </div>
+                            <div class="stats-price">
+                                <img src="images/checkmark-circle.png" alt="" />
+                                <p>TV LED</p>
+                            </div>
+                            <div class="bottons">
+                                <select name="see More Featurs" class="featurs">
+                                    <option value="see More Featurs">see More Featurs</option>
+                                </select>
+                                <p>or</p>
+                                <span>Chose Plan &#8599;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="for-padding">
+                    <div class="pricing-form">
+                        <div class="Content-pricing-txt">
+                            <h4>Join Room</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet,<br />
+                                consectetur adipiscing elit. Etiam <br />
+                                hendrerit metus ex, id ullamcorper <br />
+                                massa accumsan volutpat.
+                            </p>
+                        </div>
+                        <div class="price">
+                            <div class="price-fix">
+                                <h4>$30.5</h4>
+                                <p>/ Person</p>
+                            </div>
+                            <img src="images/Line.png" alt="" />
+                            <span><br />Featurs</span>
+                        </div>
+                        <div>
+                            <div class="stats-price">
+                                <img src="images/checkmark-circle.png" alt="" />
+                                <p>Bedside Cabinet</p>
+                            </div>
+                            <div class="stats-price">
+                                <img src="images/checkmark-circle.png" alt="" />
+                                <p>Waiting Chair</p>
+                            </div>
+                            <div class="stats-price">
+                                <img src="images/checkmark-circle.png" alt="" height="0" />
+                                <p>
+                                    Bathroom (Hot & Cold <br />
+                                    Water)
+                                </p>
+                            </div>
+                            <div class="stats-price">
+                                <img src="images/checkmark-circle.png" alt="" />
+                                <p>TV LED + WIFI</p>
+                            </div>
+                            <div class="bottons">
+                                <select name="see More Featurs" class="featurs">
+                                    <option value="see More Featurs">see More Featurs</option>
+                                </select>
+                                <p>or</p>
+                                <span>Chose Plan &#8599;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="for-padding">
+                    <div class="pricing-form">
+                        <div>
+                            <div class="Content-pricing-txt">
+                                <h4>Join Room</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet,<br />
+                                    consectetur adipiscing elit. Etiam <br />
+                                    hendrerit metus ex, id ullamcorper <br />
+                                    massa accumsan volutpat.
+                                </p>
+                            </div>
+                            <div class="price">
+                                <div class="price-fix">
+                                    <h4>$50.6</h4>
+                                    <p>/ Person</p>
+                                </div>
+                                <img src="images/Line.png" alt="" />
+                                <span><br />Featurs</span>
+                            </div>
+                            <div>
+                                <div class="stats-price">
+                                    <img src="images/checkmark-circle.png" alt="" />
+                                    <p>Bedside Cabinet</p>
+                                </div>
+                                <div class="stats-price">
+                                    <img src="images/checkmark-circle.png" alt="" />
+                                    <p>Waiting Chair</p>
+                                </div>
+                                <div class="stats-price">
+                                    <img src="images/checkmark-circle.png" alt="" height="0" />
+                                    <p>
+                                        Bathroom (Hot & Cold <br />
+                                        Water)
+                                    </p>
+                                </div>
+                                <div class="stats-price">
+                                    <img src="images/checkmark-circle.png" alt="" />
+                                    <p>TV LED + WIFI</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottons">
+                            <select name="see More Featurs" class="featurs">
+                                <option value="see More Featurs">see More Featurs</option>
+                            </select>
+                            <p>or</p>
+                            <span>Chose Plan &#8599;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="botton-plan">
+            <div class="btn-doctor">
+                <a href="#" class="btn">See More Plan<i class="fa fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="Appointment-book-content">
+
+            <div class="Appointment-padding">
+
+                <div class="Appointment-infos">
+                    <div class="Appointment-bg">
+                        <div class="left-content-aboutus"><span>BOOK AN APPOINTMENT</span></div>
+                        <div class="h4-appointment">
+                            <h4>Book Your Appointment by Filling in This Form Below</h4>
+                        </div>
+                        <div class="info-appointment-content">
+                            <div>
+                                <div class="row-info">
+                                    <div class="infos-appoinment">
+                                        <span>Name <br></span>
+                                        <input type="text" placeholder="Name">
+                                    </div>
+                                    <div class="infos-appoinment">
+                                        <span>email <br></span>
+                                        <input type="text" placeholder="exemple@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="row-info">
+                                    <div class="infos-appoinment">
+                                        <span>Doctor Type <br></span>
+                                        <select id="Doctor-types" name="doctor-name">
+                                            <option value="">Choose Doctor Type</option>
+                                        </select>
+                                    </div>
+                                    <div class="infos-appoinment">
+                                        <span>Doctor Name <br></span>
+                                        <select id="doctor-Names" name="doctor-name">
+                                            <option value="">Choose Doctor Name</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row-info">
+                                    <div class="infos-appoinment">
+                                        <span>Date<br></span>
+                                        <select id="dates" name="doctor-name">
+                                            <option value="">Choose Date</option>
+                                        </select>
+                                    </div>
+                                    <div class="infos-appoinment">
+                                        <span>Time <br></span>
+                                        <select id="timming" name="doctor-name">
+                                            <option value="">Choose Time</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Description">
+                                <span>Description</span>
+                                <div class="Description-content">
+                                    <p>Hello World!</p>
+                                </div>
+                            </div>
+                            <div class="botton-appointment"><a href="#">Send &#x2192;</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <div class="footer-default">
+                <div class="left-footer">
+                    <img src="images/logo1.jpg" alt="" width="250">
+                    <div>
+                        <div class="btn-footer">
+                            <input type="search" placeholder="Email Address">
+                            <button>Subscribe</button>
+                        </div>
+                        <span>Nullam ultrices lorem et augue placerat blandit. Nam nisl lacus,<br>
+                            imperdiet quis dui pretium, pretium vehicula turpis. Fusce <br>
+                            scelerisque fermentum lacinia.</span>
+                        <div class="social-media">
+                            <a href="#"><img src="images/whatssap.png" alt=""></a>
+                            <a href="#"><img src="images/Facebook.png" alt=""></a>
+                            <a href="#"><img src="images/Instagram.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-infos">
+                    <div class="footer-infos1">
+                        <div class="content-info">
+                            <h4>Quick Links</h4>
+                            <span>Home</span>
+                            <span>About Me</span>
+                            <span>Portfolio</span>
+                            <span>Blog</span>
+                        </div>
+                        <div class="content-info">
+                            <h4>Work Category</h4>
+                            <span>Architecture</span>
+                            <span>Nature</span>
+                            <span>Modelling</span>
+                            <span>Event</span>
+                            <span>Branding</span>
+                        </div>
+                        <div class="content-info">
+                            <h4>Legal</h4>
+                            <span>Return Policy</span>
+                            <span>Shipping Policy</span>
+                            <span>Privacy Policy</span>
+                            <span>Terms of Services</span>
+                        </div>
+                    </div>
+                    <div class="Location">
+                        <h4>Location</h4>
+                        <span>Surabaya</span>
+                        <p>Jl. Danau Jonge 12, Mayjend <br>
+                            Sungkono, Surabaya</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
